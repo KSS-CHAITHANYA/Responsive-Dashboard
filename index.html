@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Web Design Using HTML CSS and JavaScript</title>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="This is a sample web page using Bootstrap 4.5.2."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5919a7c899.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="container1">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img
+              src="https://res.cloudinary.com/duwcigilo/image/upload/v1682323478/logo-groww270_ybmexp.png"
+              alt="logo"
+              class="grow-logo"
+            />
+            <h2 class="groww-heading">Groww</h2>
+          </div>
+          <div class="close" id="closeBtn">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </div>
+        </div>
+        <!--https://fonts.google.com/icons-->
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-icons icon">dashboard</span>
+            <h3 class="icon-title">Dashboard</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons icon">person_outline</span>
+            <h3 class="icon-title">Customers</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">receipt_long</span>
+            <h3 class="icon-title">Orders</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">insights</span>
+            <h3 class="icon-title">Analytics</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">mail_outline</span>
+            <h3 class="icon-title">Messages</h3>
+            <span class="message-count">26</span>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">inventory</span>
+            <h3 class="icon-title">Products</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">report_gmailerrorred</span>
+            <h3 class="icon-title">Reports</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">settings</span>
+            <h3 class="icon-title">Settings</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">add</span>
+            <h3 class="icon-title">Add Product</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons icon">logout</span>
+            <h3 class="icon-title">Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- ......................END OF ASIDE......................... -->
+      <main>
+        <h1 class="dashboard-head">Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <div class="sales">
+            <span class="material-icons">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>Rs.26,000</h1>
+              </div>
+              <div class="progress1">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- .................END OF SALES.................... -->
+          <div class="expenses">
+            <span class="material-icons">bar_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>Rs.14,160</h1>
+              </div>
+              <div class="progress1">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- .................END OF Expenses.................... -->
+          <div class="income">
+            <span class="material-icons">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>Rs.10,680</h1>
+              </div>
+              <div class="progress1">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- .................END OF Income.................... -->
+        </div>
+        <!-- .................END OF INSIGHTS................. -->
+
+        <div class="recent-orders">
+          <h2>Recent Orders</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Kreo Rec Condenser Microphone</td>
+                <td>85632</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>DIGITEK® Gorilla Tripod</td>
+                <td>85633</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Samsung Galaxy M14 5G</td>
+                <td>85634</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Darwin Dx Laptop Backpack</td>
+                <td>85635</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+      <!-- ........................END OF MAIN.......................... -->
+      <div class="right">
+        <div class="top">
+          <button id="menuBtn">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-symbols-outlined active">light_mode</span>
+            <span class="material-symbols-outlined">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Chaithanya</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img
+                src="https://res.cloudinary.com/duwcigilo/image/upload/v1665529191/12006422_789588134484054_2845047183539536883_o_vk4vvs.jpg"
+                alt="profile-pic"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- END OF TOP -->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="https://res.cloudinary.com/duwcigilo/image/upload/v1683874283/profile-4_gcw8cd.jpg"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Manali Mishra</b> received her order of Night lion tech GPS
+                  drone.
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="https://res.cloudinary.com/duwcigilo/image/upload/v1683874715/desktop-wallpaper-ajith-kumar-latest-ajith-kumar-thumbnail_vwktxn.jpg"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Ajith Kumar</b> received his order of Canon EOS 6D Mark ||
+                  .
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="https://res.cloudinary.com/duwcigilo/image/upload/v1683874289/profile-3_zb9jhs.jpg"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Aishwarya Menon</b> received her order of boAt Bluetooth
+                  Speaker .
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ===========================END OF RECENT UPDATES================================== -->
+        <div class="sales-analytics">
+          <h2>Sales Analytics</h2>
+          <div class="item online">
+            <div class="icon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ONLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+39%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-symbols-outlined">local_mall</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>OFFLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>1100</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-symbols-outlined">person</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>NEW CUSTOMERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+25%</h5>
+              <h3>849</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <span class="material-symbols-outlined">add</span>
+            <h3>Add Product</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
